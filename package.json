@@ -1,0 +1,26 @@
+{
+  "name": "apollo-graphql-auth-typescript-sample-2024",
+  "version": "1.0.0",
+  "description": "A guide for apollo-graphql auth.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "dev": "nodemon",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "dataloader": "^2.2.2",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.8.1"
+  }
+}
