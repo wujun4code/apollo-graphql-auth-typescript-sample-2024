@@ -53,34 +53,34 @@ const demoArticles = [
         title: 'AAA', id: 1, content: 'aaa', lastEditedBy: 2,
         acl: {
             "*": { read: true },
-            "role:editor": [
-                { read: true },
-                { write: true }
-            ],
-            "role:admin": [
-                { read: true },
-                { write: true }
-            ],
+            "role:editor": {
+                read: true,
+                write: true
+            },
+            "role:admin": {
+                read: true,
+                write: true
+            },
         }
     },
     {
         title: 'BBB ', id: 2, content: 'bbb', lastEditedBy: 2,
         acl: {
             "*": { read: true },
-            "role:editor": [
-                { read: true },
-                { write: true }
-            ],
+            "role:editor": {
+                read: true,
+                write: true
+            },
         }
     },
     {
         title: 'CCC', id: 3, content: 'ccc', lastEditedBy: 2,
         acl: {
             "*": { read: false },
-            "role:admin": [
-                { read: true },
-                { write: true }
-            ]
+            "role:admin": {
+                read: true,
+                write: true
+            },
         }
     },
 ];
